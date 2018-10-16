@@ -44,7 +44,7 @@
   
     示例：
     ```
-    List<domain> list = new ArrayList<>();
+    List<Student> list = new ArrayList<>();
         list.add(new Student("阿锋", 22, "一班"));
         list.add(new Student("阿峰",23, "一班"));
 
