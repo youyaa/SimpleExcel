@@ -43,14 +43,13 @@
       List<T>: List集合，即需要导出数据的集合。
   
     示例：
-    ```
+ 
     List<Student> list = new ArrayList<>();
         list.add(new Student("阿锋", 22, "一班"));
         list.add(new Student("阿峰",23, "一班"));
 
         OutputStream outputStream = new FileOutputStream("D:\\test.xls");
         ExcelUtils.exportExcel(outputStream, Student.class, list );
-    ```
     
     直接运行程序，即可见证奇迹哦！
    
