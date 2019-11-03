@@ -8,21 +8,17 @@ import java.lang.annotation.Target;
 @Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface ExcelField {
-	public static final int STRING = 1;
-	
-	public static final int INT = 2;
-	
-	public static final int LONG = 3;
-	
-	public static final int BIGDECIMAL = 4;
+    int STRING = 1;
+    int INT = 2;
+    int LONG = 3;
+    int BIGDECIMAL = 4;
+    int TIMESTAMP = 5;
 
-	public static final int TIMESTAMP = 5;
-	
-	int index() default 0;
-	
-	int type() default 1;
+    int index() default 0;
 
-	String name() default "";
-	
-	String title() default "";
+    int type() default 1;
+
+    String name() default "";
+
+    String title() default "";
 }
